@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+p, li, a {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+.divider {
+  border: 1px #cccccc solid;
+  border-bottom: 0;
+  margin: 100px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  padding: 10px 0;
+  background-color: #f2f9f2;
+}
+
+.navbar .nav-btns {
+  gap: 60px;
+}
+
+.navbar .nav-btns a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #212529;
+  font-weight: 500;
+}
+
+.home {
+  padding: 210px 0 0;
+}
+
+.home .img-desp {
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home .my-image {
+  width: 40%;
+}
+
+.home .my-image img {
+  border-radius: 10px;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 97px -4px rgba(0, 0, 0, 0.29);
+          box-shadow: 1px 1px 97px -4px rgba(0, 0, 0, 0.29);
+  -webkit-transition: border-radius .5s,-webkit-transform .5s;
+  transition: border-radius .5s,-webkit-transform .5s;
+  transition: transform .5s,border-radius .5s;
+  transition: transform .5s,border-radius .5s,-webkit-transform .5s;
+}
+
+.home .my-image img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  border-radius: 20px;
+}
+
+.home .my-description {
+  width: 60%;
+  padding-left: 60px;
+}
+
+.home .my-description .name {
+  font-size: 100px;
+  margin: 0;
+  color: #ff5925;
+}
+
+.home .my-description .role {
+  font-size: 48px;
+  margin: 0;
+}
+
+.about h3 {
+  font-size: 36px;
+  text-align: center;
+  color: rebeccapurple;
+}
+
+.about .skills {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 750px;
+  width: 100%;
+  margin: 100px auto;
+  gap: 120px;
+}
+
+.about h4 {
+  font-size: 30px;
+}
+
+.about .description {
+  max-width: 450px;
+  width: 100%;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.half-border-top {
+  border-radius: 10px;
+  padding: 50px;
+  -webkit-box-shadow: 48px -48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+          box-shadow: 48px -48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+  border-right: 0;
+  border-top: 0;
+  -webkit-transition: -webkit-box-shadow .75s;
+  transition: -webkit-box-shadow .75s;
+  transition: box-shadow .75s;
+  transition: box-shadow .75s, -webkit-box-shadow .75s;
+}
+
+.half-border-top:hover {
+  -webkit-box-shadow: -48px 48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+          box-shadow: -48px 48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+}
+
+.half-border-bottom {
+  border-radius: 10px;
+  padding: 50px;
+  -webkit-box-shadow: -48px -48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+          box-shadow: -48px -48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+  border-left: 0;
+  border-bottom: 0;
+  -webkit-transition: -webkit-box-shadow .75s;
+  transition: -webkit-box-shadow .75s;
+  transition: box-shadow .75s;
+  transition: box-shadow .75s, -webkit-box-shadow .75s;
+}
+
+.half-border-bottom:hover {
+  -webkit-box-shadow: 48px 48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+          box-shadow: 48px 48px 53px 0px rgba(0, 0, 0, 0.29) inset;
+}
+
+.fa {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.fa-linkedin, .fa-twitter, .fa-instagram {
+  color: white;
+  border-radius: 20px;
+}
+
+.fa-linkedin {
+  background-color: #0072b1;
+}
+
+.fa-twitter {
+  background-color: #00acee;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.mt-20 {
+  margin-top: 20ox;
+}
+/*# sourceMappingURL=abcd.css.map */
