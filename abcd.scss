@@ -71,6 +71,8 @@ section{
             width: 100%;
             box-shadow: 1px 1px 97px -4px rgba(0,0,0,0.29); 
             transition: transform .5s,border-radius .5s;
+            animation: imageRotate;
+            animation-duration: 1.5s;
             
             &:hover{
                 transform: scale(1.01);
@@ -83,6 +85,8 @@ section{
             font-size: 50px;
             margin: 0;
             color: rgb(255,89,37);
+            animation: hello;
+            animation-duration: 1.5s;
         }
         .role{
             font-size: 30px;
@@ -105,6 +109,8 @@ section{
         max-width: 250px;
         margin: 50px auto;
         gap: 50px; 
+        animation: divRotate;
+        animation-duration: 2s;
     }
     h4{
         font-size: 30px;
@@ -112,6 +118,11 @@ section{
     .description{
         max-width: 450px;
         width: 100%;
+    }
+    .content{
+        ul{
+            list-style-type: none;
+        }
     }
     .contacts{
         display: flex;
@@ -130,27 +141,15 @@ section{
     justify-content: space-between;
 }
 
-.half-border-top{
+.inset-hover{
     border-radius: 10px;
     padding: 50px;
-    box-shadow: 48px -48px 53px 0px rgba(0,0,0,0.29) inset;
+    box-shadow: 1px 1px 77px -40px rgba(0,0,0,0.75) inset;
     border-right: 0;
     border-top: 0;
-    transition: box-shadow .75s;  
+    transition: all .75s;  
     &:hover{
-        box-shadow: -48px 48px 53px 0px rgba(0,0,0,0.29) inset;  
-    } 
-}
-
-.half-border-bottom{
-    border-radius: 10px;
-    padding: 50px;
-    box-shadow: -48px -48px 53px 0px rgba(0,0,0,0.29) inset;
-    border-left: 0;
-    border-bottom: 0;    
-    transition: box-shadow .75s;  
-    &:hover{
-      box-shadow: 48px 48px 53px 0px rgba(0,0,0,0.29) inset;  
+        box-shadow: 1px 1px 105px -30px rgba(0,0,0,0.75) inset;  
     } 
 }
 
@@ -176,6 +175,32 @@ section{
   .mt-20{
     margin-top: 20ox;
   }
+
+@keyframes hello {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.02)}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.01);}
+    100% {transform: scale(1);}
+}
+
+@keyframes imageRotate {
+    0% {transform: scale(1);}
+    25% {transform: rotateY(50deg)}
+    35% {transform: rotateY(90deg)}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.01);}
+    100% {transform: scale(1);}
+}
+
+@keyframes divRotate {
+    0% {transform: scale(1);}
+    25% {transform: rotateY(80deg)}
+    35% {transform: rotateX(90deg)}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.01);}
+    100% {transform: scale(1);}
+}
 
   @media only screen and (min-width: 992px) {
     .container{
