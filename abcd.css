@@ -40,7 +40,7 @@ section {
   position: fixed;
   z-index: 1000;
   padding: 10px 0;
-  background-color: #1c1d1c;
+  background-color: #f0fbf0;
 }
 
 .navbar .nav-btns {
@@ -229,6 +229,10 @@ section {
 
 .theme-dark {
   background: black;
+}
+
+.theme-dark .navbar {
+  background-color: #1c1d1c;
 }
 
 .theme-dark .navbar .name {
