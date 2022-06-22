@@ -33,7 +33,7 @@ section{
     position: fixed;
     z-index: 1000; 
     padding: 10px 0;
-    background-color: #1c1d1c;
+    background-color: #f0fbf0;
     .nav-btns{
         display: none;
         gap: 60px;
@@ -181,6 +181,7 @@ section{
 .theme-dark{
     background: black;
     .navbar{
+        background-color: #1c1d1c;
         .name{
             color: white;
         }
