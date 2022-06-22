@@ -40,7 +40,7 @@ section {
   position: fixed;
   z-index: 1000;
   padding: 10px 0;
-  background-color: #f2f9f2;
+  background-color: #1c1d1c;
 }
 
 .navbar .nav-btns {
@@ -64,7 +64,7 @@ section {
 }
 
 .home {
-  padding: 150px 0 100px;
+  padding: 200px 0 140px;
 }
 
 .home .container {
@@ -120,7 +120,7 @@ section {
 }
 
 .about {
-  padding: 50px 0;
+  padding: 90px 0;
 }
 
 .about h3 {
@@ -155,17 +155,15 @@ section {
   list-style-type: none;
 }
 
-.about .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.end-card {
+  padding: 50px 0;
 }
 
-.about .contacts a {
+.end-card h4 {
+  font-size: 30px;
+}
+
+.end-card a {
   text-decoration: none;
 }
 
@@ -227,6 +225,42 @@ section {
 
 .mt-20 {
   margin-top: 20ox;
+}
+
+.theme-dark {
+  background: black;
+}
+
+.theme-dark .navbar .name {
+  color: white;
+}
+
+.theme-dark .navbar .nav-btns a {
+  color: white;
+}
+
+.theme-dark .home .role {
+  color: white;
+}
+
+.theme-dark .about .description h4 {
+  color: white;
+}
+
+.theme-dark .about .description p {
+  color: whitesmoke;
+}
+
+.theme-dark .about .content {
+  color: white;
+}
+
+.theme-dark .about .skills {
+  background: #100e0e;
+}
+
+.theme-dark .end-card h4 {
+  color: white;
 }
 
 @-webkit-keyframes hello {
@@ -422,6 +456,13 @@ section {
   }
   .about .skills {
     max-width: 900px;
+  }
+  .end-card h4 {
+    padding-left: 50px;
+  }
+  .end-card .contacts {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .d-flex {
     -webkit-box-orient: horizontal;

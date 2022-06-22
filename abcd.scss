@@ -33,7 +33,7 @@ section{
     position: fixed;
     z-index: 1000; 
     padding: 10px 0;
-    background-color: #f2f9f2;
+    background-color: #1c1d1c;
     .nav-btns{
         display: none;
         gap: 60px;
@@ -53,7 +53,7 @@ section{
 }
 
 .home{
-    padding: 150px 0 100px;
+    padding: 200px 0 140px;
     .container{
         max-width: 300px;
         margin: 0 auto;
@@ -97,7 +97,7 @@ section{
 }
 
 .about{
-    padding: 50px 0 ;
+    padding: 90px 0 ;
     
     h3{
         font-size: 36px;
@@ -123,14 +123,16 @@ section{
         ul{
             list-style-type: none;
         }
+    }    
+}
+
+.end-card{
+    padding: 50px 0;
+    h4{
+        font-size: 30px;
     }
-    .contacts{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        a{
-            text-decoration: none;
-        }
+    a{
+        text-decoration: none;
     }
 }
 
@@ -175,6 +177,46 @@ section{
   .mt-20{
     margin-top: 20ox;
   }
+
+.theme-dark{
+    background: black;
+    .navbar{
+        .name{
+            color: white;
+        }
+        .nav-btns{
+            a{
+                color: white;
+            }
+        }
+    }
+    .home{
+        .role{
+            color: white;
+        }
+    }
+    .about{
+        .description{
+            h4{
+                color: white;
+            }
+            p{
+                color: whitesmoke;
+            }
+        }
+        .content{
+            color: white;
+        }
+        .skills{
+            background: #100e0e;
+        }
+    }
+    .end-card{
+        h4{
+            color: white;
+        }
+    }
+}
 
 @keyframes hello {
     0% {transform: scale(1);}
@@ -239,6 +281,14 @@ section{
     .about{
         .skills{
             max-width: 900px;
+        }
+    }
+    .end-card{
+        h4{
+            padding-left: 50px;
+        }
+        .contacts{
+            justify-content: space-around;
         }
     }
     .d-flex{
